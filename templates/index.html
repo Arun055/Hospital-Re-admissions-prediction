@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Readmission Predictor</title>
+    <style>
+        /* Apply common styling to all elements */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("static/images/bg3.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            max-width: 400px;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #fff;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        select {
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            width: 100%;
+            margin-bottom: 20px;
+            color: #000;
+            background-color: #fff;
+        }
+
+        input[type="submit"] {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="submit"]:focus {
+            outline: none;
+            box-shadow: 0 0 5px #007bff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/mainhome">Home</a>
+        <a href="/predictmain">Prediction</a>
+    </div>
+    <div class="content">
+        <h1>Hospital Readmission Predictor</h1>
+        <form action="/predict" method="post">
+            <label for="disease">Choose a disease:</label>
+            <select id="disease" name="disease">
+                <option value="diabetes">Diabetes</option>
+                <option value="covid19">COVID-19</option>
+                <option value="heart_failure">Heart Failure</option>
+                <option value="kidney_disease">Kidney Disease</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            /* Add the background image */
+            background-image: url("../static/images/bg2.jpg");
+
+            background-size: 105% 120%; /* Adjust the background size */
+            background-repeat: no-repeat; /* This will prevent the image from repeating */
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 30px;
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 30px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        a {
+            display: block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        a.login-btn {
+            background-color: #007bff;
+        }
+
+        a.register-btn {
+            background-color: #ff6600;
+        }
+
+        a:hover {
+            background-color: #333;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Hospital Readmission Prediction</h1>
+    <p>Please choose an option:</p>
+    <a href="/login" class="login-btn">Login</a>
+    <a href="/register" class="register-btn">Register</a>
+</div>
+
+</body>
+</html>

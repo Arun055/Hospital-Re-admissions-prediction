@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}My Website{% endblock %}</title>
+<!--    <link rel="stylesheet" type="text/css" href="static/css/style.css">-->
+    <style>
+            body {
+              font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+            }
+
+
+            /* Style the navigation bar */
+            .navbar {
+              background-color: #007bff;
+              padding: 10px;
+            }
+
+            .navbar a {
+              color: #fff;
+              text-decoration: none;
+              margin-right: 15px;
+            }
+
+            /* Style the dropdown menu */
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+
+            .dropbtn {
+              background-color: #f1f1f1;
+              color: #000;
+              padding: 10px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+
+            .dropdown-content a {
+              color: #000;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+
+            .dropdown-content a:hover {
+              background-color: #f1f1f1;
+            }
+
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <div class="dropdown">
+            <select class="dropbtn" id="diseaseDropdown">
+                <option value="diabetes">Diabetes</option>
+                <option value="heart">Heart</option>
+                <option value="kidney">Kidney</option>
+                <option value="covid19">COVID-19</option>
+            </select>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/predict.js') }}"></script>
+</body>
+</html>

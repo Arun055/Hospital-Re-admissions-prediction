@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Readmission Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url("static/images/bg3.jpg");
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            color: #0056b3;
+        }
+
+        .content {
+            max-width: 800px;
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        h1 {
+            color: #007bff;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .catchy-image {
+            width: 200px;
+            margin: 0 15px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .center-button {
+            margin-top: 30px;
+        }
+
+        .center-button a {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 14px 40px;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 18px;
+        }
+
+        .center-button a:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/mainhome">Home</a>
+        <a href="/predictmain">Prediction</a>
+    </div>
+    <div class="content">
+        <h1>Welcome to Hospital Readmission Predictor</h1>
+        <p>Our Hospital Readmission Predictor is a powerful tool that helps healthcare professionals predict the likelihood of patients being readmitted to the hospital due to inadequate treatment or care. By analyzing patient data and historical trends, our predictor provides valuable insights to improve patient outcomes and reduce readmission rates.</p>
+        <div class="images-container">
+            <img src="static/images/images1.jpeg" alt="Image 1" class="catchy-image">
+            <img src="static/images/image2.jpeg" alt="Image 2" class="catchy-image">
+            <img src="static/images/image3.jpeg" alt="Image 3" class="catchy-image">
+        </div>
+        <p>Join us in our mission to enhance healthcare quality and patient experiences by using data-driven insights to make informed decisions.</p>
+        <!-- Centered button -->
+        <div class="center-button">
+            <a href="/predictmain">Go to Prediction Page</a>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Hospital Readmission Predictor. All rights reserved.</p>
+    </div>
+</body>
+</html>
